@@ -1,0 +1,1 @@
+﻿{"Models":[{"ID":"4a571474-912a-487e-b395-17b2d35c6a7d","Name":"156","Capacity":"2000"},{"ID":"db772f28-1f6e-4a9b-9f3f-57f2851065bf","Name":"159","Capacity":"2200"},{"ID":"99cac3cc-02d3-468e-9f68-a506e32d7793","Name":"BRERA","Capacity":"2200"},{"ID":"a7cd9f85-2695-4098-90ce-1a9578b59ac4","Name":"GT","Capacity":"2000"}]}

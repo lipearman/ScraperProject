@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TQM" Class="TQMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=TQM;Persist Security Info=True;User ID=sa" SettingsObjectName="TQM.Properties.Settings" SettingsPropertyName="TQMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblCarBrand" Member="tblCarBrands">
+    <Type Name="tblCarBrand">
+      <Column Name="CarBrandCode" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CarBrandName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCarModel" Member="tblCarModels">
+    <Type Name="tblCarModel">
+      <Column Name="ID" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarModelCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarModelName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CarBrandCode" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="CarYear" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCarSubModel" Member="tblCarSubModels">
+    <Type Name="tblCarSubModel">
+      <Column Name="ID" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarSubModelCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarSubModelName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CarModelCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarBrandCode" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CarYear" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCarCC" Member="tblCarCCs">
+    <Type Name="tblCarCC">
+      <Column Name="ID" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarCCCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarCCName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CarModelCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarBrandCode" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CarYear" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCarSubModelCC" Member="tblCarSubModelCCs">
+    <Type Name="tblCarSubModelCC">
+      <Column Name="ID" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarSubModelCCCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarSubModelCCName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CarModelCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarBrandCode" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CarYear" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CarSubModelCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CarSubModelID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMotorCoverage" Member="tblMotorCoverages">
+    <Type Name="tblMotorCoverage">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SearchID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InsurerImage" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="InsurerName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Premium" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtInsurerGarage" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtGarageNo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtSuminSured" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCheckCar" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverPirate" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverFlood" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDeduct" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverTP1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverTP2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverTP3" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverBody" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverFire" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverPA" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverMedical" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverBB" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGarage" Member="tblGarages">
+    <Type Name="tblGarage">
+      <Column Name="GarageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GarageName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="GarageType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="gps" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="insurer" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Search" Member="V_Searches">
+    <Type Name="V_Search">
+      <Column Name="categories_insurance_year" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="categories_insurance_brand" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="categories_insurance_age" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CarSubModelCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="categories_insurance_cc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VEHICLEKEY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CarSubModelName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CarCCName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CoverMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CoverMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMotorSearch" Member="tblMotorSearches">
+    <Type Name="tblMotorSearch">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarModelCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CarBrandCode" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="CarYear" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CarSubModelCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CarSubModelName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CarCCCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CarCCName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="txtPolType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtInsurer" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtPremium" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtLogo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCarType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtGarageType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtSuminsured" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDeduct" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtGarageCount" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCover1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCoverFlood" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtCarCheck" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtSubmitID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtSubmitStatus" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDataC" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDataP" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDataPV" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDataVAT" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDataTax" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtDataAge" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="txtComment" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCarSubModelSumInsured" Member="tblCarSubModelSumInsureds">
+    <Type Name="tblCarSubModelSumInsured">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarModelCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CarBrandCode" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="CarYear" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CarSubModelCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CarSuminsured" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CarSuminsuredText" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsPost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

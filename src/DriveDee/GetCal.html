@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	
+	
+<script>
+ $(document).ready(function() {
+ 
+var content = {
+c_ab:"1"
+,c_age:"1"
+,c_brand_code:36
+,c_brand_name:"NISSAN"
+,c_model_code:"431|2016"
+,c_model_name:"MARCH"
+,c_promocode:""
+,c_submodel_code:5956
+,c_submodel_name:"AUTO E 1.2I CVT 4WD"
+,c_lowprice:250000
+,c_topprice:300000
+,c_vehiclecode:110
+,c_vehiclesidate:"02/01/2018"
+,c_year_code:"36|2016"
+,c_year_name:2016
+
+,q2:"a"
+,q3:"a"
+
+,promo_support:""
+,ctype:"cal"
+,GarageType:"E"
+,insurance_date_start:"04/01/2018"
+,VehSuminsure:260000
+,excess:"N"
+,ODDeduct:0
+,NCBRate:30
+,DriverFlag:"N"
+,birthday1:1
+,birthday2:1
+,Accessory:"N"
+,accessory_price:0
+,Compulsory_Price:0
+,Compulsory_Check:"N"
+,compulsory_date:"04/01/2018"
+,CCTV:"N"
+,plan_email:""
+};
+
+var site_url='https://www.drivedee.com/';
+
+					
+	$("#btnext").click(function(e){
+					e.preventDefault();
+
+
+					$.ajax({
+						type: "POST",
+						dataType: "json",
+						url: site_url+'check/deduction',
+						data: content,
+						cache: false,
+						success: function (result) {
+							if(result.status=='ok'){
+								window.location=site_url+'plan';//summary
+							/*
+							
+								if(result.code==91){
+									window.location=site_url+'question';
+								}else if(result.code==92){
+									window.location=site_url+'plan';
+								}else{
+									alert('ERROR: : '+result.code);
+								}
+							*/
+							}else if(result.status=='error' && result.code==10){
+								alert('กรุณาเลือกข้อมูลให้ครบ');
+							}else if(result.status=='error' && result.code==11){
+								alert(result.msg); // ws return error
+							}else if(result.status=='error' && result.code==13){
+								alert(result.msg);// count_CanSelect=0
+							}else if(result.status=='error' && result.code==912){
+								alert(result.msg);
+							}else if(result.status=='error' && (result.code==52 || result.code==53 || result.code==54 || result.code==55 || result.code==56 || result.code==57)){
+                                alert(result.msg);
+							}else{
+								alert('ERROR:: '+result.code);
+							}
+						},
+						error: function (msg) {
+							alert(msg.status);
+						}
+						   
+					  });
+					  
+					  
+				  
+/*					  
+					$.post("https://www.drivedee.com/check/car",content,
+						function(result){
+							alert(result);
+						});
+					  
+	*/					  
+					  
+					  
+				//alert(content);	  
+
+
+	}); 
+});
+</script>	
+	
+	
+</head>
+<body>
+ 
+ 
+  <form action="https://www.drivedee.com/check/car" method="post" id="content" name="content">
+
+<input type="hidden" value='{c_ab:"1",c_age:"1",c_brand_code:36,c_brand_name:"NISSAN",c_lowprice:260000,c_model_code:"423|2016",c_model_name:"ALMERA",c_promocode:"",c_submodel_code:6538,c_submodel_name:"AUTO E 1.2I CVT 4WD",c_topprice:320000,c_vehiclecode:"110",c_vehiclesidate:"02/01/2018",c_year_code:"36|2016",c_year_name:2016}' name='content' />		
+ 
+
+
+         <button type="submit" name="btnext1" id="btnext1">ตกลง</button>
+         
+    </form>
+
+ 
+ 
+ <button type="button" name="btnext" id="btnext">ตกลง</button>
+</body>
+</html>

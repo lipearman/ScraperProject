@@ -1,0 +1,1 @@
+﻿{"Models":[{"ID":"4a45cdb4-200e-41e1-a139-8ac275794172","Name":"MG3","Capacity":"1500"},{"ID":"28522806-5113-4f4c-9ad2-b9459f10790c","Name":"MG5","Capacity":"1500"},{"ID":"3bb2e8fd-3363-454d-a727-31c61202f179","Name":"MG6","Capacity":"1800"}]}

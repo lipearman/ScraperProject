@@ -1,0 +1,1 @@
+﻿{"Models":[{"ID":"ac4ec457-58fc-4325-bb10-29fc00708750","Name":"CERATO KOUP","Capacity":"2000"},{"ID":"fca76ece-662b-41f6-9d5b-9b362b63f51c","Name":"SORENTO","Capacity":"2200"},{"ID":"7b9bbff1-b43c-482f-955f-c4d71ddec97d","Name":"SOUL","Capacity":"1600"}]}

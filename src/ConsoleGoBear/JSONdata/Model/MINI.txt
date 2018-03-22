@@ -1,0 +1,1 @@
+﻿{"Models":[{"ID":"34b38555-a2cc-4c38-ac16-2f1afcfb9afb","Name":"COOPER","Capacity":"1500"},{"ID":"75aa1a69-8431-4a21-8187-fb6fc4a9e2ef","Name":"COOPER","Capacity":"1600"},{"ID":"ec7bd33a-f215-4f00-9d06-4629b5608c61","Name":"COOPER","Capacity":"2000"},{"ID":"5111e3e0-54cd-452f-b9f9-80f06bd8e6f2","Name":"ONE","Capacity":"1600"}]}

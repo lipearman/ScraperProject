@@ -1,0 +1,1 @@
+﻿{"Models":[{"ID":"85db42b2-ef1a-4966-919e-ba0ccdb1f75a","Name":"ELANTRA","Capacity":"1800"},{"ID":"d697f4a5-bc15-4577-afaa-0e6b6f7d9995","Name":"GRAND STAREX","Capacity":"2500"},{"ID":"be3d487a-0a14-4cf4-b316-109e200f9c55","Name":"H-1","Capacity":"2500"},{"ID":"f1f40e0c-e5ae-46ef-90d0-4312d45dd767","Name":"TUCSON","Capacity":"2000"}]}

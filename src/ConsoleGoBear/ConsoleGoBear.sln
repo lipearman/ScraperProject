@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGoBear", "ConsoleGoBear.csproj", "{BF1A276E-6F40-409E-86D1-2C7E13A2CD72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTQM", "..\TQM\ConsoleTQM.csproj", "{CCB04B5A-BFD4-481C-9C9D-B49F336B91C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTQM", "..\AppTQM\AppTQM.csproj", "{401E22E4-5814-4DE0-AFD0-CAF7625CCE69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF1A276E-6F40-409E-86D1-2C7E13A2CD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1A276E-6F40-409E-86D1-2C7E13A2CD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1A276E-6F40-409E-86D1-2C7E13A2CD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1A276E-6F40-409E-86D1-2C7E13A2CD72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB04B5A-BFD4-481C-9C9D-B49F336B91C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB04B5A-BFD4-481C-9C9D-B49F336B91C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB04B5A-BFD4-481C-9C9D-B49F336B91C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB04B5A-BFD4-481C-9C9D-B49F336B91C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401E22E4-5814-4DE0-AFD0-CAF7625CCE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401E22E4-5814-4DE0-AFD0-CAF7625CCE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401E22E4-5814-4DE0-AFD0-CAF7625CCE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401E22E4-5814-4DE0-AFD0-CAF7625CCE69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

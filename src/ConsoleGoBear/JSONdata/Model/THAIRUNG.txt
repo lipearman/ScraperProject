@@ -1,0 +1,1 @@
+﻿{"Models":[{"ID":"a78e64fd-68d6-4327-a6c7-1569d04bce9e","Name":"ADVENTURE","Capacity":"3000"},{"ID":"de5cecc4-c284-478c-8afd-e4779667ba11","Name":"ADVENTURE II ","Capacity":"3000"},{"ID":"36d3bee8-6031-4467-b95f-95cfada0c48c","Name":"ADVENTURE MASTER","Capacity":"3000"},{"ID":"e086c5f6-3b4c-406f-a58a-f377ccbd990f","Name":"XCITER","Capacity":"3000"}]}

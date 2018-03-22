@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Gobear" Class="GobearDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=Gobear;User ID=sa" SettingsObjectName="ConsoleGoBear.Properties.Settings" SettingsPropertyName="GobearConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Make" Member="Makes">
+    <Type Name="Make">
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="Make_Model" Member="Models" ThisKey="ID" OtherKey="MakeID" Type="Model" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Model" Member="Models">
+    <Type Name="Model">
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MakeID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Capacity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Make_Model" Member="Make" ThisKey="MakeID" OtherKey="ID" Type="Make" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMotorSearch" Member="tblMotorSearches">
+    <Type Name="tblMotorSearch">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BrandName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ModelID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ModelName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ModelYear" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Capacity" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="InsurerID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="InsurerName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="InsurerLogo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="InsurerSmallLogo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PlanID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PlanName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Premium" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="OriginalPremium" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DiscountValue" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DiscountUnit" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DiscountUntill" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TotalScore" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Score" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PlanCategory" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="HasQuotes" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PromotionID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PromotionTitle" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="UrlTitle" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Class" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="IsBroker" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Link" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SKUCode" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CheckoutNotes" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="OD" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ODDD" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Flood" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="FIX" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TP" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

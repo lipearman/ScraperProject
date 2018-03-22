@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.625, 12.625" name="TQM">
+  <DataContextMoniker Name="/TQMDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8149d875-4cce-416c-ad21-745a76253170" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/TQMDataContext/tblCarBrand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="720c66f1-b2bc-4334-89fa-e8ff13c7840f" absoluteBounds="0.76500000000000012, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2961c80c-38ab-4a83-96cc-80a5e182a976" absoluteBounds="0.75, 2.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/TQMDataContext/tblCarModel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a868c210-1315-4aa9-94b7-fe6c25f027ec" absoluteBounds="0.76500000000000012, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d7bc175-3398-46ac-8e04-47703b4d6761" absoluteBounds="3.75, 0.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/TQMDataContext/tblCarSubModel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a467cf3-8434-4041-b28a-d2d56928ebcd" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbd6d16d-1764-4dbd-be58-2a269a49e770" absoluteBounds="3.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/TQMDataContext/tblCarCC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="260050e4-b01c-47f3-8cbf-daafea900ebc" absoluteBounds="3.7650000000000006, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f7c4efa-9af2-46c4-94fd-831479dbdaf0" absoluteBounds="6.75, 0.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/TQMDataContext/tblCarSubModelCC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16c21279-ec61-4eb6-87d3-f1d5dd0fd5d1" absoluteBounds="6.7650000000000006, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b1ec41f8-9e9e-4845-aacf-cb4b36eeb9fb" absoluteBounds="9.75, 0.75, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/TQMDataContext/tblMotorCoverage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2c61c16-536f-46d7-9c09-8596cd456a6f" absoluteBounds="9.765, 1.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f5fbdaf-f33f-4d88-8b0d-259e04cf4b2e" absoluteBounds="11.375, 6.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/TQMDataContext/tblGarage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d5778f8-bbdd-4dc4-b771-e8c966881348" absoluteBounds="11.39, 7.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7c1609d-b760-4928-b355-a82a403c1200" absoluteBounds="4.125, 6.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TQMDataContext/V_Search" />
+      <nestedChildShapes>
+        <elementListCompartment Id="127ef064-007c-4b4a-a258-eb86d101362c" absoluteBounds="4.14, 6.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb81078b-c0c6-4b6c-94ef-e1d235dde3be" absoluteBounds="3.5, 6, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/TQMDataContext/tblMotorSearch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="024050ea-f0ce-48a9-a3e0-cd1786c96b42" absoluteBounds="3.5149999999999997, 6.46, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f6416a9e-9657-444c-8272-072b413e5836" absoluteBounds="1.25, 5.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TQMDataContext/tblCarSubModelSumInsured" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c58c5431-ada8-4e01-abea-c33d99bf73cd" absoluteBounds="1.2649999999999997, 6.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
